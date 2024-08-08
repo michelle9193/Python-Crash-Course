@@ -30,7 +30,7 @@
 # del motorcycles[0]
 # print(motorcycles)
 
-# Removing (the last) item using the pop() method
+# Removing the last item using the pop() method
 # Pop() allows you to use the value after you remove it from a list
 # motorcycles = ['honda', 'yamaha', 'suzuki']
 # popped_motorcycle = motorcycles.pop()
