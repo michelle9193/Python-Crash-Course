@@ -20,17 +20,3 @@ dimensions = (200, 50)
 # print("\nModified dimensions:")
 # for dimension in dimensions:
 #     print(dimension)
-
-# 4-13 Buffet
-buffets = ('lobster', 'wagyu', 'sashimi', 'corn', 'potatoes')
-for buffet in buffets:
-    print(buffet)
-
-# Modify an item - error
-# buffets[2] = "risotto"
-# print(buffet)
-
-# Revised menu
-updates = ('lobster', 'crab', 'wagyu', 'sashimi', 'chicken')
-for update in updates:
-    print(update)

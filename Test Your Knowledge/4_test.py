@@ -18,7 +18,8 @@
 #    print(value)
 
 # 4-4 One Million
-# Make a list of numbers from one to one million and then use a for loop to print the numbers
+# Make a list of numbers from one to one million and then use a for loop to 
+# print the numbers
 # millions = list(range(1, 1000002))
 # for million in millions:
 #    print(million)
@@ -86,3 +87,17 @@
 # print("These are my favorite foods:")
 # for food in foods:    
 #     print(food.title())
+
+# # 4-13 Buffet
+# buffets = ('lobster', 'wagyu', 'sashimi', 'corn', 'potatoes')
+# for buffet in buffets:
+#     print(buffet)
+
+# # Modify an item - error
+# # buffets[2] = "risotto"
+# # print(buffet)
+
+# # Revised menu
+# updates = ('lobster', 'crab', 'wagyu', 'sashimi', 'chicken')
+# for update in updates:
+#     print(update)

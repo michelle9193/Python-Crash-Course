@@ -5,7 +5,8 @@
 # Output the second third and fourth , start index at 1
 # print(players[1:4])
 
-# Output the third item to the last, start with index 2 and omit the second index
+# Output the third item to the last, start with index 2 and omit the second 
+# index
 # print(players[2:])
 
 # Output the last three players
