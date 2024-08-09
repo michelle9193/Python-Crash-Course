@@ -1,4 +1,4 @@
-#Testing multiple conditions
+# Testing multiple conditions
 #If more than one block of code needs to run, use a series of multiple independent if statements
 #requested_toppings = ['mushrooms', 'extra cheese']
 
@@ -11,7 +11,7 @@
 
 #print("\nFinished making your pizza!")
 
-#Checking for special items
+# Checking for special items
 #requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 #for requested_topping in requested_toppings:
     #print(f"Adding {requested_topping}")
@@ -24,7 +24,7 @@
 
 #print("\nFinished making your pizza!")
 
-#Checking that a list is not empty
+# Checking that a list is not empty
 #requested_toppings = []
 #When a name is used in an if statement, Python returns True if the list contains at least one item. An empty list evaluates to False.
 #if requested_toppings:
@@ -34,7 +34,7 @@
 #else:
     #print("Are you sure you want a plain pizza?")
 
-#Using multiple lists
+# Using multiple lists
 #available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
 
 #requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
