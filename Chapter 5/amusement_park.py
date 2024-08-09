@@ -1,4 +1,4 @@
-#The if-elif-else chain
+# The if-elif-else chain
 #age = 12
 #if age < 4:
     #print("Your admission cost is $0.")
@@ -17,7 +17,7 @@
 
 #print(f"Your admission cost is ${price}.")
 
-#Using multiple elif blocks
+# Using multiple elif blocks
 #age = 12
 #if age < 4:
     #price = 0
@@ -30,7 +30,7 @@
 
 #print(f"Your admission cost is ${price}.")
 
-#Omitting the else block
+# Omitting the else block
 age = 12
 if age < 4:
     price = 0

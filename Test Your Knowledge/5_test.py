@@ -83,7 +83,7 @@
 #age = 19
 #print(age < 20)
 
-#Greateer than or equal to
+#Greater than or equal to
 #age = 19
 #print(age >= 19)
 
