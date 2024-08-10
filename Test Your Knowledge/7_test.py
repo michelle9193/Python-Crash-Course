@@ -144,3 +144,17 @@
 # while current_number < 10:
 #     print(current_number)
 
+# # 7-8 Deli
+# sandwich_orders = ['steak', 'full house', 'tukey', 'club', 'caprese']
+# finished_sandwiches = []
+
+# while sandwich_orders:
+#     current_sandwich = sandwich_orders.pop()
+
+#     print(f"I made your {current_sandwich} sandwich!")
+#     finished_sandwiches.append(current_sandwich)
+
+# print("\nThe following sandwiches is ready for pick-up:")
+# for finished_sandwich in finished_sandwiches:
+#     print(finished_sandwich.title())
+
