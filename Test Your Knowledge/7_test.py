@@ -158,3 +158,11 @@
 # for finished_sandwich in finished_sandwiches:
 #     print(finished_sandwich.title())
 
+# # 7-9 No Pastrami
+# sandwich_orders = ['pastrami','steak', 'full house', 'pastrami', 'tukey','pastrami', 'club', 'caprese']
+# print("\nWe have run out of pastrami, please choose a different sandwich.")
+
+# while 'pastrami' in sandwich_orders:
+#     pastrami = sandwich_orders.remove('pastrami')
+
+# print(sandwich_orders)
