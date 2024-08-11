@@ -159,10 +159,36 @@
 #     print(finished_sandwich.title())
 
 # # 7-9 No Pastrami
-# sandwich_orders = ['pastrami','steak', 'full house', 'pastrami', 'tukey','pastrami', 'club', 'caprese']
+# sandwich_orders = ['pastrami','steak', 'full house', 'pastrami', 'tukey','
+# pastrami', 'club', 'caprese']
 # print("\nWe have run out of pastrami, please choose a different sandwich.")
 
 # while 'pastrami' in sandwich_orders:
 #     pastrami = sandwich_orders.remove('pastrami')
 
 # print(sandwich_orders)
+
+# 7-10 Dream Vacation
+responses = {}
+# Set a flag to indicate that the polling is active.
+polling_active = True
+
+while polling_active:
+    # Prompt for response.
+    name = input("What is your name? ")
+    answer = input("If you could visit one place in the world, where would " 
+    "you go? ")
+    
+    # Store the response in the dictionary
+    responses[name] = answer
+
+    # Find out if anyoe else is going to take the poll.
+    repeat = input("Would you like to like to respond again? (yes / no) ")
+    if repeat == 'no':
+        polling_active = False
+
+# Polling is complete. Show results.
+print("\n--- Poll Results ---")
+for name, answer in responses.items():
+    print(f"{name} would like to visit {answer}.")
+
