@@ -101,3 +101,12 @@
 # updates = ('lobster', 'crab', 'wagyu', 'sashimi', 'chicken')
 # for update in updates:
 #     print(update)
+
+# 4-14 PEP 8
+
+# 4-15 Code review
+famous_person = "dalai lama"
+quote = "When you\n\ttalk, you are only repeating\n\twhat you already know.\n\t"
+" But if you listen, you may\n\tlearn something new."
+message = f'\t{famous_person.title()} once said, "{quote}"'
+print(message)

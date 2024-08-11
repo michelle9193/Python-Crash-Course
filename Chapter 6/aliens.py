@@ -1,4 +1,4 @@
-#A list of dictionaries
+# A list of dictionaries
 #alien_0 = {'color': 'green', 'points': 5}
 #alien_1 = {'color': 'yellow', 'points': 10}
 #alien_2 = {'color': 'red', 'points': 15}
@@ -8,8 +8,8 @@
 #for alien in aliens:
     #print(alien)
 
-#Use range() to create a fleet of 30 aliens
-#Make an empty list for storing aliens.
+# Use range() to create a fleet of 30 aliens
+# Make an empty list for storing aliens.
 aliens = []
 
 # Make 30 green aliens

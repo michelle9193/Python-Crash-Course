@@ -1,4 +1,4 @@
-#Using tabs and newlines
+# Using tabs and newlines
 #\n - newline
 #\t - tab
 
@@ -9,7 +9,7 @@ print("\tPython")
 print("Languages:\nPython\nC\nJavascript")
 print("Languages:\n\tPython\n\tC\n\tJavascript")
 
-#Stripping white space
-#rstrip()
-#lstrip()
-#strip()
+# Stripping white space
+# rstrip()
+# lstrip()
+# strip()
