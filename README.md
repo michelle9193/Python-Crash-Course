@@ -24,3 +24,8 @@ A Hands-On, Project-Based  Introduction to Programming.
 - Define a list and add/remove elements.
 - Sort lists permanently and temporarily for display purposes.
 - Find length of a list and how to avoid index errors.
+
+## Chapter 4 - Working With Lists
+- Work through list using a for loop.
+- How to use indentation to structure a program to avoid errors.
+- Make simple numerical lists.
