@@ -18,3 +18,9 @@ A Hands-On, Project-Based  Introduction to Programming.
 - Work with integers, floats, and numerical data.
 - Learn how to write explanatory comments to make code easier to read.
 - The philosophy of keeping code as simple as possible, whenever possible.
+
+## Chapter 3 - Introduction to Lists
+- Work with elements in a list.
+- Define a list and add/remove elements.
+- Sort lists permanently and temporarily for display purposes.
+- Find length of a list and how to avoid index errors.
