@@ -1,4 +1,6 @@
-# Python Crash Course
+# Python Crash Course 3rd Editiion
+
+A Hands-On, Project-Based  Introduction to Programming.
 
 ## Chaper 1 - Getting Started
 - Install Python and run first program, hello_world.py.
