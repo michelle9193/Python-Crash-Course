@@ -39,3 +39,10 @@ A Hands-On, Project-Based  Introduction to Programming.
 - Use structures to identify particular conditions to test and know when those conditions have been met in a program.
 - How to handle certain items in a list differently than all other items while continuing to utilize the efficiency of a for loop.
 - Revisit Python's style recommendations to ensure that complex programs are still easy to read and understand.
+
+## Chapter 6 - Dictionaries
+- How to define a dictionary and how to work with the information stored in a dictionary.
+- How to access and modify individual elements in a dictionary.
+- How to loop through all of of the information in a dictionary.
+- Loop through a dictionary's key-value pairs, its keys, and its values.
+- How to nest multiple dictionaries in a list, nest lists in a dictionary, and nest a dictionary inside a dictionary.
