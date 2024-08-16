@@ -31,3 +31,7 @@
 # make_shirt()
 # make_shirt('medium')
 # make_shirt('small', 'Programmers Rule')
+
+# 8-5 Cities
+def describe_city(name, country):
+    """Simple sentence"""
