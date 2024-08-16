@@ -11,3 +11,14 @@
 #     print(f"One of my favorite books is {title.title()}!")
 
 # favorite_book("python crash course")
+
+# # 8-3 T-Shirt
+# def make_shirt(tshirt_size):
+#     """Display shirt size"""
+#     print(f"I need a {tshirt_size} size t-shirt, please!")
+
+# # Positional argument
+# # make_shirt("medium")
+# # Keyword argument
+# make_shirt(tshirt_size='medium')
+
