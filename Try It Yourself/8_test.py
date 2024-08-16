@@ -22,3 +22,12 @@
 # # Keyword argument
 # make_shirt(tshirt_size='medium')
 
+# # 8-4 Large Shirts
+# def make_shirt(size='large', message='I love Python'):
+#     """Display shirt size"""
+#     print(f"\nI need a {size} t-shirt, please!")
+#     print(f"It should say '{message}'!")
+
+# make_shirt()
+# make_shirt('medium')
+# make_shirt('small', 'Programmers Rule')
