@@ -15,7 +15,8 @@
 # for completed_model in completed_models:
 #     print(completed_model)
 
-# Reorganize the code by writing two functions, each of which does one specific job
+# Reorganize the code by writing two functions, each of which does one specific
+# job
 # The first function will handle printing the designs, and the second will 
 # summarize the prints that been made.
 # def print_models(unprinted_designs, completed_models):  
@@ -41,3 +42,9 @@
 # show_completed_models(completed_models)
 
 # Preventing a function from modifying a list
+# Send a copy of a list to a function:
+# function_name(list_name[:])
+
+# If we didn’t want to empty the list of unprinted designs, we could call 
+# print_models() like this:
+# print_models(unprinted_designs[:], completed_models)
