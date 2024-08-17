@@ -76,27 +76,37 @@
 # artist_info = make_album('ariana grande', 'eternal sunshine')
 # print(artist_info)
 
-# With tracks
-def make_album(artist_name, album_name, songs=None):
-    """A dictionary that returns artist details"""
+# # With tracks
+# def make_album(artist_name, album_name, songs=None):
+#     """A dictionary that returns artist details"""
 
-    artist_details = {
-        'artist': artist_name.title(), 
-        'album': album_name.title(),
-        }
+#     artist_details = {
+#         'artist': artist_name.title(), 
+#         'album': album_name.title(),
+#         }
     
-    if songs:
-        artist_details['songs'] = songs
-    return artist_details
+#     if songs:
+#         artist_details['songs'] = songs
+#     return artist_details
 
-artist_info = make_album('taylor swift', 'folklore')
-print(artist_info)
+# artist_info = make_album('taylor swift', 'folklore')
+# print(artist_info)
 
-artist_info = make_album('maren morris', 'girl')
-print(artist_info)
+# artist_info = make_album('maren morris', 'girl')
+# print(artist_info)
 
-artist_info = make_album('ariana grande', 'eternal sunshine')
-print(artist_info)
+# artist_info = make_album('ariana grande', 'eternal sunshine')
+# print(artist_info)
 
-artist_info = make_album('heritage singers', 'forgiven', 13)
-print(artist_info)
+# artist_info = make_album('heritage singers', 'forgiven', 13)
+# print(artist_info)
+
+# 8-9 Messages
+def show_messages(messages):
+    """A list containing a series of short text messages"""
+    for message in messages:
+        return message
+
+the_message = ['i love you', 'what are we having for dinner', 'please pick up some '
+           'milk']
+print(the_message)
