@@ -7,5 +7,3 @@
 
 # usernames = ['hannah', 'ty', 'margot']
 # greet_users(usernames)
-
-# Modifying a list in a function
