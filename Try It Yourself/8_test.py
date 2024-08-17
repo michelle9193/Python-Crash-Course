@@ -138,3 +138,30 @@
 # print(messages)
 # print(sent_messages)
 
+# 8-11 Archived messages
+def show_messages(messages):
+    """A list containing a series of short text messages"""
+    print("Show all messages:")
+    for message in messages:
+        print(message)
+    
+def send_messages(messages, sent_messages):
+    """Print each message and then move it to sent_messages"""
+    print("\nSending all messages:")
+    while messages:
+        current_message = messages.pop()
+        print(current_message)
+        sent_messages.append(current_message)
+
+messages = ['i love you', 'what are we having for dinner', 'please pick up some'
+' milk']
+show_messages(messages)
+
+sent_messages = []
+send_messages(messages[:], sent_messages)
+
+# Display both lists
+print("\nOriginal list:")
+print(messages)
+print("\nNew list")
+print(sent_messages)
