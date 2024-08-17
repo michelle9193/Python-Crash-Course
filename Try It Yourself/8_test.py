@@ -32,6 +32,12 @@
 # make_shirt('medium')
 # make_shirt('small', 'Programmers Rule')
 
-# 8-5 Cities
-def describe_city(name, country):
-    """Simple sentence"""
+# # 8-5 Cities
+# def describe_city(name, country='South Africa'):
+#     """Simple sentence"""
+#     print(f"{name.title()} is in {country.title()}.")
+
+# describe_city('cape town')
+# describe_city('johannesburg')
+# describe_city('japan','singapore')
+
