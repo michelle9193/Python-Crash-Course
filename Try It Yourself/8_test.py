@@ -41,3 +41,62 @@
 # describe_city('johannesburg')
 # describe_city('japan','singapore')
 
+# # 8-6 City Names
+# def city_country(city, country):
+#     """Return city and country name"""
+#     get_city_country = f'"{city}, {country}"'
+#     return get_city_country.title()
+
+# formatted_string = city_country('cape town', 'south africa')
+# print(formatted_string)
+
+# formatted_string = city_country('london', 'england')
+# print(formatted_string)
+
+# formatted_string = city_country('brisbane', 'australia')
+# print(formatted_string)
+
+# # 8-7 Album
+# def make_album(artist_name, album_name):
+#     """A dictionary that returns artist details"""
+#     artist_details = {
+#         'artist': artist_name, 
+#         'album': album_name,
+#         }
+    
+#     return artist_details
+
+# # Make three dictionaries representing different albums
+# artist_info = make_album('taylor swift', 'folklore')
+# print(artist_info)
+
+# artist_info = make_album('maren morris', 'girl')
+# print(artist_info)
+
+# artist_info = make_album('ariana grande', 'eternal sunshine')
+# print(artist_info)
+
+# With tracks
+def make_album(artist_name, album_name, songs=None):
+    """A dictionary that returns artist details"""
+
+    artist_details = {
+        'artist': artist_name.title(), 
+        'album': album_name.title(),
+        }
+    
+    if songs:
+        artist_details['songs'] = songs
+    return artist_details
+
+artist_info = make_album('taylor swift', 'folklore')
+print(artist_info)
+
+artist_info = make_album('maren morris', 'girl')
+print(artist_info)
+
+artist_info = make_album('ariana grande', 'eternal sunshine')
+print(artist_info)
+
+artist_info = make_album('heritage singers', 'forgiven', 13)
+print(artist_info)
