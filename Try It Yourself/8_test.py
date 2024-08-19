@@ -189,3 +189,21 @@
 #                              color='green', hobby='hiking')
 
 # print(user_profile)
+
+# # 8-14 Cars
+# def make_car(manufacturer, make, **features):
+#     """Build a dicitionary about cars and its features"""
+#     car = {
+#         'manufacturer': manufacturer.title(),
+#         'make': make.title(),
+#         }
+#     for feature, value in features.items():
+#         car[feature] = value
+        
+#     return car
+
+# first_car = make_car('volkswagen', 'polo', color='white', wheels='alloy')
+# print(first_car)
+
+# car_profile = make_car('suzuki', 'jimny', engine='1.8 l', fuel_type='petrol')
+# print(car_profile)
