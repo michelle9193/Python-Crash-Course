@@ -177,3 +177,15 @@
 # make_sandwich('pastrami', 'pickles')
 # make_sandwich('cheese', 'avocdo', 'olives')
 
+# # 8-13 User Profile
+# def build_profile(first, last, **user_info):
+#     """Build a dictionary containing everything we know about a user."""
+#     user_info['first_name'] = first
+#     user_info['last_name'] = last
+#     return user_info
+
+# user_profile = build_profile('michelle', 'fortuin',
+#                              location='cape town',
+#                              color='green', hobby='hiking')
+
+# print(user_profile)
