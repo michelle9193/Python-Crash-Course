@@ -53,3 +53,11 @@ A Hands-On, Project-Based  Introduction to Programming.
 - Ways to control the flow of a while loop by setting an active flag, using the break statement, and uisng the continue statement.
 - Use a while loop to move items from one list to another and remove all instances of a value from a list.
 - Use while loops with dictionaries.
+
+## Chapter 8 - Functions
+- Write functions and pass arguments so that functions have access to the information they need to do their work.
+- Use positional and keyword arguments, accept an arbitrary number of arguments.
+- Functions that display output and funtions that return values.
+- Use functions with lists, dictionaries, if statements, and while loops.
+- Store functions in separate files called modules, to make files simpler and easier to understand.
+Style funcctionsto ensure programs continue to be well-structured and as easy as possible to read.
