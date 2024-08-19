@@ -48,3 +48,11 @@
 # If we didn’t want to empty the list of unprinted designs, we could call 
 # print_models() like this:
 # print_models(unprinted_designs[:], completed_models)
+
+import printing_functions as pf
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+pf.print_models(unprinted_designs, completed_models)
+pf.show_completed_models(completed_models)
