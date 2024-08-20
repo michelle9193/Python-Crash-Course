@@ -54,37 +54,37 @@
 # kfc = Restaurant('kfc', 'fried chicken')
 # kfc.describe_restaurant()
 
-# 9-3 Users
-class Users:
-    """This is how to add users"""
+# # 9-3 Users
+# class Users:
+#     """This is how to add users"""
 
-    def __init__(self, first_name, last_name, email, location, username):
-        """Initialize a user"""
-        self.first_name = first_name.title()
-        self.last_name = last_name.title()
-        self.email = email
-        self.location = location.title()
-        self.username = username
+#     def __init__(self, first_name, last_name, email, location, username):
+#         """Initialize a user"""
+#         self.first_name = first_name.title()
+#         self.last_name = last_name.title()
+#         self.email = email
+#         self.location = location.title()
+#         self.username = username
 
-    def describe_user(self):
-        """Print a summary of the user's information"""
-        # summary = f"First Name: {self.first_name}\nLast Name: {self.last_name}\nEmail: {self.email}\nLocation: {self.location}\nUsername: {self.username}"
-        # print(f"\n{summary}")
-        print(f"\n{self.first_name} {self.last_name}")
-        print(f"{self.email}")
-        print(f"{self.location}")
-        print(f"{self.username}")
+#     def describe_user(self):
+#         """Print a summary of the user's information"""
+#         # summary = f"First Name: {self.first_name}\nLast Name: {self.last_name}\nEmail: {self.email}\nLocation: {self.location}\nUsername: {self.username}"
+#         # print(f"\n{summary}")
+#         print(f"\n{self.first_name} {self.last_name}")
+#         print(f"{self.email}")
+#         print(f"{self.location}")
+#         print(f"{self.username}")
 
-    def greet_user(self):
-        """A personalize greeting to the user"""
-        greeting = f"Hello, {self.first_name} {self.last_name}!"
-        print(f"\n{greeting}")
+#     def greet_user(self):
+#         """A personalize greeting to the user"""
+#         greeting = f"Hello, {self.first_name} {self.last_name}!"
+#         print(f"\n{greeting}")
 
-# Make an instance called users from the class
-michelle = Users('michelle', 'scholtz', 'michelle@yahoo.com', 'cape town', 'michelle003')
-michelle.describe_user()
-michelle.greet_user()
+# # Make an instance called users from the class
+# michelle = Users('michelle', 'scholtz', 'michelle@yahoo.com', 'cape town', 'michelle003')
+# michelle.describe_user()
+# michelle.greet_user()
 
-gershwin = Users('gershwin', 'scholtz', 'gscholtz@hotmail.com', 'langebaan', 'gdog99')
-gershwin.describe_user()
-gershwin.greet_user()
+# gershwin = Users('gershwin', 'scholtz', 'gscholtz@hotmail.com', 'langebaan', 'gdog99')
+# gershwin.describe_user()
+# gershwin.greet_user()
