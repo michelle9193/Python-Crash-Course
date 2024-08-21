@@ -88,3 +88,58 @@
 # gershwin = Users('gershwin', 'scholtz', 'gscholtz@hotmail.com', 'langebaan', 'gdog99')
 # gershwin.describe_user()
 # gershwin.greet_user()
+
+# 9-4 Number Served
+class Restaurant:
+    """Model a restaurant"""
+
+    def __init__(self, restaurant_name, cuisine_type):
+        "Initialize name and cuisine type attributes"
+        self.name = restaurant_name.title()
+        self.type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        """Describe a restaurant"""
+        message = f"{self.name} serves the best {self.type}."
+        print(f"\n{message}")
+
+    def open_restaurant(self):
+        """Show the working hours of a restaurant"""
+        message = f"{self.name} is open til late!"
+        print(f"\n{message}")
+
+    def read_number_served(self):
+        """Print how many customers are being served"""
+        print(f"We are serving {self.number_served} customers.")
+
+    def set_number_served(self, number_served):
+        """
+        Set the number of customers served to the given value.
+        Reject the change if it attempts to descrease the number served.
+        """
+        if number_served >= self.number_served:
+            self.number_served = number_served
+        else:
+            print("You can't decrease number served")
+
+    def increment_number_served(self, served):
+        """Add the given amount to the customers served."""
+        self.number_served += served
+
+# Make an instance called restaurant from the class
+restaurant = Restaurant('spur', 'steak')
+# print(restaurant.name)
+# print(restaurant.type)
+
+# Print number of customers the restaurant has served.
+restaurant.read_number_served()
+# Change the value and print again
+restaurant.number_served = 23
+restaurant.read_number_served()
+# Set number served
+restaurant.set_number_served(50)
+restaurant.read_number_served()
+# Increment how many guests were served
+restaurant.increment_number_served(100)
+restaurant.read_number_served()
