@@ -232,24 +232,24 @@ class Restaurant:
         """Add the given amount to the customers served."""
         self.number_served += served
     
-    def IceCreamStand(Restaurant):
-        """Respect an ice cream stand specific to a certain restaurant."""
-        
+class IceCreamStand(Restaurant):
+    """Respresent an ice cream stand specific to a certain restaurant."""
+    def __init__(self, restaurant_name, cuisine_type='ice cream'):
+        """
+        Initialize attributes of the parent class
+        Then initialize attributes that is specific to the ice cream stand
+        """
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = []
 
+    def show_flavors(self):
+        """Display all the ice cream flavors."""
+        print("We have the following flavors available:")
+        for flavor in self.flavors:
+            print(f"- {flavor.title()}")
 
-# Make an instance called restaurant from the class
-restaurant = Restaurant('spur', 'steak')
-# print(restaurant.name)
-# print(restaurant.type)
+spur = IceCreamStand('Spur')
+spur.flavors = ['chocolate', 'strawberry', 'vanilla']
 
-# Print number of customers the restaurant has served.
-restaurant.read_number_served()
-# Change the value and print again
-restaurant.number_served = 23
-restaurant.read_number_served()
-# Set number served
-restaurant.set_number_served(50)
-restaurant.read_number_served()
-# Increment how many guests were served
-restaurant.increment_number_served(100)
-restaurant.read_number_served()
+spur.describe_restaurant()
+spur.show_flavors()
