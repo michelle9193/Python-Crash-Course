@@ -1,4 +1,5 @@
 # # Working with Classes and Instances
+"""A class that can be used to represent a car."""
 # # The Car Class
 # class Car:
 #     """A simple attempt to represent a car."""
