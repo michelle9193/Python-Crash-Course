@@ -314,74 +314,154 @@
 # admin.describe_user()
 # admin.show_privileges()
 
-# 9-8 Privileges
-class Users:
-    """This is how to add users"""
+# # 9-8 Privileges
+# class Users:
+#     """This is how to add users"""
 
-    def __init__(self, first_name, last_name, email, location, username):
-        """Initialize a user"""
-        self.first_name = first_name.title()
-        self.last_name = last_name.title()
-        self.email = email
-        self.location = location.title()
-        self.username = username
+#     def __init__(self, first_name, last_name, email, location, username):
+#         """Initialize a user"""
+#         self.first_name = first_name.title()
+#         self.last_name = last_name.title()
+#         self.email = email
+#         self.location = location.title()
+#         self.username = username
 
-    def describe_user(self):
-        """Print a summary of the user's information"""
-        # summary = f"First Name: {self.first_name}\nLast Name: {self.last_name}
-        # \nEmail: {self.email}\nLocation: {self.location}\nUsername: 
-        # {self.username}"
-        # print(f"\n{summary}")
-        print(f"\n{self.first_name} {self.last_name}")
-        print(f"{self.email}")
-        print(f"{self.location}")
-        print(f"{self.username}")
+#     def describe_user(self):
+#         """Print a summary of the user's information"""
+#         # summary = f"First Name: {self.first_name}\nLast Name: {self.last_name}
+#         # \nEmail: {self.email}\nLocation: {self.location}\nUsername: 
+#         # {self.username}"
+#         # print(f"\n{summary}")
+#         print(f"\n{self.first_name} {self.last_name}")
+#         print(f"{self.email}")
+#         print(f"{self.location}")
+#         print(f"{self.username}")
 
-    def greet_user(self):
-        """A personalize greeting to the user"""
-        greeting = f"Hello, {self.first_name} {self.last_name}!"
-        print(f"\n{greeting}")
+#     def greet_user(self):
+#         """A personalize greeting to the user"""
+#         greeting = f"Hello, {self.first_name} {self.last_name}!"
+#         print(f"\n{greeting}")
 
-class Privileges:
-    """Model privileges to the admin user."""
-    def __init__(self, privileges=[]):
-        """Initialize privileges attribute"""
-        self.privileges = privileges
+# class Privileges:
+#     """Model privileges to the admin user."""
+#     def __init__(self, privileges=[]):
+#         """Initialize privileges attribute"""
+#         self.privileges = privileges
 
-    def show_privileges(self):
-        """Display all the admin privileges."""
-        print(f"The admin has the following privileges: {self.privileges}")
-        if self.privileges:
-            for privilege in self.privileges:
-                print(f"- {privilege}")
-        else:
-            print("- This user has no privileges.")
+#     def show_privileges(self):
+#         """Display all the admin privileges."""
+#         print(f"The admin has the following privileges: ")
+#         if self.privileges:
+#             for privilege in self.privileges:
+#                 print(f"- {privilege}")
+#         else:
+#             print("- This user has no privileges.")
 
-class Admin(Users):
-    """Initialize admin priexcvileges."""
-    def __init__(self, first_name, last_name, email, location, username):
+# class Admin(Users):
+#     """Initialize admin priexcvileges."""
+#     def __init__(self, first_name, last_name, email, location, username):
+#         """
+#         Initialize attributes of the parent class.
+#         Then initiliaze attributes specific to an administrator.
+#         """
+#         super().__init__(first_name, last_name, email, location, username)
+        
+#         # Initialize an empty set of privileges.
+#         self.privileges = Privileges()
+    
+# # Make an instance called users from the class
+# billy = Admin('billy', 'james', 'billy@hotmail.com', 'claremont', 
+#                         'admin_billy')
+# billy.describe_user
+
+# billy.privileges.show_privileges()
+
+# print("\nAdding privileges:")
+# billy_privileges = [
+#     'can add post', 
+#     'can delete post', 
+#     'can ban user'
+#     ]
+
+# billy.privileges.privileges = billy_privileges
+# billy.privileges.show_privileges()
+
+# # 9-9 Battery Update
+# class Car:
+#     """A simple attempt to represent a car."""
+#     def __init__(self, make, model, year):
+#         """Initialize attributes to describe a car."""
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+#     def get_descriptive_name(self):
+#         """Return a neatly formatted descriptive name."""
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+
+#     def read_odometer(self):
+#         """Print a statement showing the car's mileage."""
+#         print(f"This car has {self.odometer_reading} miles on it.")
+
+#     def update_odometer(self, mileage):
+#         """Set the odometer reading to the given value."""
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")
+#     def increment_odometer(self, miles):
+#         """Add the given amount to the odometer reading."""
+#         self.odometer_reading += miles
+
+# # Instances as Attributes
+# class Battery:
+#     """A simple attempt to model a battery for an electric car."""
+#     def __init__(self, battery_size=40):
+#         """Initialize the battery's attributes."""
+#         self.battery_size = battery_size
+
+#     def describe_battery(self):
+#         """Print a statement describing the battery size."""
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+#     def get_range(self):
+#         """Print a statement about the range this battery provides."""
+#         if self.battery_size == 40:
+#             range = 15
+#         elif self.battery_size == 65:
+#             range = 25
+#         print(f"This car can go about {range} miles on a full charge.")
+
+#     def upgrade_battery(self):
+#         """Upgrade the size of the battery."""
+#         self.battery_size = 65
+#         """Print a statement to show the battery size has upgraded."""
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+
+
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+    def __init__(self, make, model, year):
         """
         Initialize attributes of the parent class.
-        Then initiliaze attributes specific to an administrator.
+        Then initialize attributes specific to an electric car.
         """
-        super().__init__(first_name, last_name, email, location, username)
-        
-        # Initialize an empty set of privileges.
-        self.privileges = Privileges()
-    
-# Make an instance called users from the class
-billy = Admin('billy', 'james', 'billy@hotmail.com', 'claremont', 
-                        'admin_billy')
-billy.describe_user
+        super().__init__(make, model, year)
+        self.battery = Battery()
 
-billy.privileges.show_privileges()
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
 
-print("\nAdding privileges:")
-billy_privileges = [
-    'can add post', 
-    'can delete post', 
-    'can ban user'
-    ]
+    # Overriding Methods form the Parent Class
+    def fill_gas_tank(self):
+        """Electric cars don't have gas tanks."""
+        print("This car doesn't have a gas tank!")
 
-billy.privileges.privileges = billy_privileges
-billy.privileges.show_privileges()
+my_leaf = ElectricCar('nissan', 'leaf', 2024)
+print(my_leaf.get_descriptive_name())
+my_leaf.battery.describe_battery()
+my_leaf.battery.get_range()
+my_leaf.battery.upgrade_battery()
+my_leaf.battery.get_range()
