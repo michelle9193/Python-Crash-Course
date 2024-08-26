@@ -478,3 +478,47 @@
 # Store the User class in one module, and store the Privileges and Admin classes
 # in a separate module. In a separate file, create an Admin instance and call 
 # show_privileges() to show that everything is still working correctly.
+
+# # 9-13 Dice
+# from random import randint
+
+# class Die:
+#     """Model a dice."""
+
+#     def __init__(self, sides=6):
+#         """Initialize sides of a die."""
+#         self.sides = sides
+
+#     def roll_die(self):
+#         """Print a random number between 1 and the number of sides the die has."""
+#         return randint(1, self.sides)
+
+# # Make a 6-sided die and show the results of 10 rolls
+# d6 = Die()
+
+# results = []
+# for roll_num in range(10):
+#     result = d6.roll_die()
+#     results.append(result)
+# print("10 rolls of a 6-sided die:")
+# print(results)
+
+# # Make a 10-sided die, and shwo the results of 10 rolls
+# d10 = Die(sides=10)
+
+# results = []
+# for roll_num in range(10):
+#     result = d6.roll_die()
+#     results.append(result)
+# print("\n10 rolls of a 10-sided die:")
+# print(results)
+
+# # Make a 20-sided die, and show the results of 10 rolls.
+# d20 = Die(sides=20)
+
+# results = []
+# for roll_num in range(10):
+#     result = d20.roll_die()
+#     results.append(result)
+# print("\n10 rolls of a 20-sided die:")
+# print(results)
