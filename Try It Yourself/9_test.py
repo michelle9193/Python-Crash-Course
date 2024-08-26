@@ -522,3 +522,22 @@
 #     results.append(result)
 # print("\n10 rolls of a 20-sided die:")
 # print(results)
+
+# 9-14 Lottery
+from random import choice
+
+lottery = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'a', 'b', 'c', 'd', 'e']
+
+winning_ticket = []
+print("Lets see what the winning ticket is..")
+
+# We do not want to repeat winning numbers or letters, so we'll use a while 
+# loop.
+while len(winning_ticket) < 4:
+    pulled_item = choice(lottery)
+
+    # Only add the pulled item to the winning ticket if it hasn't already been 
+    # pulled.
+    if pulled_item not in winning_ticket:
+        print(f" We pulled a {pulled_item}!")
+        winning_ticket.append(pulled_item)
