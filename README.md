@@ -61,3 +61,15 @@ A Hands-On, Project-Based  Introduction to Programming.
 - Use functions with lists, dictionaries, if statements, and while loops.
 - Store functions in separate files called modules, to make files simpler and easier to understand.
 Style funcctionsto ensure programs continue to be well-structured and as easy as possible to read.
+
+## Chapter 9 - Classes
+- Learn how to write classes.
+- Store information in a class using attributes.
+- Write methods that give classes the behavior they need.
+- Write __init__() modules that create instances from classes with exactly the attributes you want.
+- Modidy attributes fo an instance directly and through methods.
+- Inheritance can simplify the creation of classes that are related to each other.
+- Use instances of one class as attributes in another class to keep each class simple.
+- Store clasess in modules and import classes into the files where they'll be used to keep projects organized.
+- Learnt Python standard library, and saw an example based on the random module.
+- Style classes using Python conventions.
