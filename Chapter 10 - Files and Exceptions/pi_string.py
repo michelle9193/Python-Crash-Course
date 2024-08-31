@@ -1,10 +1,13 @@
-# # Making a List of Lines from a File
+# # Working with a File's Contents
 # filename = 'pi_digits.txt'
 
 # with open(filename) as file_object:
 #     lines = file_object.readlines()
 
+# pi_string = ''
 # for line in lines:
-#     print(line.rstrip())
+#     pi_string += line.strip()
 
-# Working with a File's Contents
+# print(pi_string)
+# print(len(pi_string))
+
