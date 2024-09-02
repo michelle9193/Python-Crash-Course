@@ -1,3 +1,5 @@
-In Python you can work with lists and dictionaries.
-I learnt how to use Classes
-I learnt how to write Functiosn
+In Python you can loop through an entire list.
+In Python you can use dictionaries which allow you to connect pieces of related 
+information.
+In Python you can write classes that represent real-world things and situations,
+and you can create objects based on these classes.
