@@ -28,7 +28,7 @@
 #     line = line.rstrip()
 #     print(line.replace('Python', 'C'))
 
-#
+# 10-3 Simpler Code
 
 # 10-4 Guest
 from pathlib import Path
