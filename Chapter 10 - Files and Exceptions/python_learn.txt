@@ -1,0 +1,3 @@
+I learnt how to work with lists and dictionaries.
+I learnt how to use Classes
+I learnt how to write Functiosn
