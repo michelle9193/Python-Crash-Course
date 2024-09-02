@@ -28,11 +28,18 @@
 #     line = line.rstrip()
 #     print(line.replace('Python', 'C'))
 
-# 10-3 Simpler Code
+# # 10-3 Simpler Code
+# from pathlib import Path
 
-# 10-4 Guest
-from pathlib import Path
+# path = Path('pi_digits.txt')
+# contents = path.read_text()
 
-prompt = input("What is your name? ")
-path = Path('guest.txt')
-path.write_text(prompt)
+# for line in contents.splitlines():
+#     print(line)
+
+# # 10-4 Guest
+# from pathlib import Path
+
+# prompt = input("What is your name? ")
+# path = Path('guest.txt')
+# path.write_text(prompt)
