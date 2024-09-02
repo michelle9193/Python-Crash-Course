@@ -1,9 +1,9 @@
 # # Working with a File's Contents
-from pathlib import Path
+# from pathlib import Path
 
-path = Path('pi_digits.txt')
-contents = path.read_text()
-print(contents)
+# path = Path('pi_digits.txt')
+# contents = path.read_text()
+# print(contents)
 
 # lines = contents.splitlines()
 # pi_string = ''
@@ -14,16 +14,17 @@ print(contents)
 # print(len(pi_string))
 
 # # Large Files: One Million Digits
-# filename = 'pi_million_digits.txt'
+# from pathlib import Path
 
-# with open(filename) as file_object:
-#     lines = file_object.readlines()
+# path = Path('pi_million_digits.txt')
+# contents = path.read_text()
 
+# lines = contents.splitlines()
 # pi_string = ''
 # for line in lines:
 #     pi_string += line.strip()
 
-# print(pi_string[:52] + "...")
+# print(f"{pi_string[:52]}...")
 # print(len(pi_string))
 
 # # Is Your Birthday Contained in Pi?
