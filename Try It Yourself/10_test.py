@@ -27,3 +27,12 @@
 # for line in lines:
 #     line = line.rstrip()
 #     print(line.replace('Python', 'C'))
+
+#
+
+# 10-4 Guest
+from pathlib import Path
+
+prompt = input("What is your name? ")
+path = Path('guest.txt')
+path.write_text(prompt)
