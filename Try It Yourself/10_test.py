@@ -97,3 +97,26 @@
 #         print("Enter a valid number!")
 #     else:   
 #         print(answer)
+
+# # 10-8 Cats and Dogs
+# from pathlib import Path
+
+# path = Path('cats.txt')
+# try:
+#     contents = path.read_text(encoding='utf-8')
+# except FileNotFoundError:
+#     print(f"Sorry, the file {path} does not exist.")
+# else:
+#     # Count the approximate number of words in the file:
+#     print(contents)
+# from pathlib import Path
+
+# path = Path('dogs.txt')
+
+# try:
+#     contents = path.read_text(encoding='utf-8')
+# except FileNotFoundError:
+#     print(f"Sorry, the file {path} does not exist.")
+# else:
+#     # Count the approximate number of words in the file:
+#     print(contents)
