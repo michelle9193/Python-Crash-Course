@@ -70,6 +70,18 @@
 
 # # 10-6 Addition
 # print("Give me two numbers, and I'll add them.")
+
+# first_number = input("\nFirst number: ")
+# second_number = input("Second number: ")
+# try:
+#     answer = int(first_number) + int(second_number)
+# except ValueError:
+#     print("Enter a valid number!")
+# else:   
+#     print(answer)
+
+# # 10-7 Addition Calculator
+# print("Give me two numbers, and I'll add them.")
 # print("Enter 'q' to quit.")
 
 # while True:
