@@ -44,26 +44,44 @@
 # path = Path('guest.txt')
 # path.write_text(prompt)
 
-# 10-5 Guest Book
-from pathlib import Path
+# # 10-5 Guest Book
+# from pathlib import Path
 
-path = Path('guest_book.txt')
+# path = Path('guest_book.txt')
 
-prompt = "\nHi, what's your name? "
-prompt += "\nEnter 'quit' if you're the last guest. "
+# prompt = "\nHi, what's your name? "
+# prompt += "\nEnter 'quit' if you're the last guest. "
 
-guest_names = []
-while True:
-    name = input(prompt)
-    if name == 'quit':
-        break
+# guest_names = []
+# while True:
+#     name = input(prompt)
+#     if name == 'quit':
+#         break
 
-    print(f"Thanks {name}, we'll add you to the guest book.")
-    guest_names.append(name)
+#     print(f"Thanks {name}, we'll add you to the guest book.")
+#     guest_names.append(name)
 
-# Build a string where "\n" is added after each name.
-file_string = ''
-for name in guest_names:
-    file_string += f"{name}\n"
+# # Build a string where "\n" is added after each name.
+# file_string = ''
+# for name in guest_names:
+#     file_string += f"{name}\n"
 
-path.write_text(file_string.strip())
+# path.write_text(file_string.strip())
+
+# # 10-6 Addition
+# print("Give me two numbers, and I'll add them.")
+# print("Enter 'q' to quit.")
+
+# while True:
+#     first_number = input("\nFirst number: ")
+#     if first_number == 'q':
+#         break
+#     second_number = input("Second number: ")
+#     if second_number == 'q':
+#         break
+#     try:
+#         answer = int(first_number) + int(second_number)
+#     except ValueError:
+#         print("Enter a valid number!")
+#     else:   
+#         print(answer)
