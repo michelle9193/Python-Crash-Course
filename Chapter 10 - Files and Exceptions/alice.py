@@ -5,4 +5,4 @@ path = Path('alice.txt')
 try:
     contents = path.read_text(encoding='utf-8')
 except FileNotFoundError:
-    print(f"Sorry, the file {path} does not exist.")jmk noji9ht
+    print(f"Sorry, the file {path} does not exist.")
