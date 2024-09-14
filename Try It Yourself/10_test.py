@@ -120,3 +120,26 @@
 # else:
 #     # Count the approximate number of words in the file:
 #     print(contents)
+
+# 10-9 Silent Cats and Dogs
+from pathlib import Path
+
+path = Path('cats.txt')
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    pass
+else:
+    # Count the approximate number of words in the file:
+    print(contents)
+from pathlib import Path
+
+path = Path('dog.txt')
+
+try:
+    contents = path.read_text(encoding='utf-8')
+except FileNotFoundError:
+    pass
+else:
+    # Count the approximate number of words in the file:
+    print(contents)
