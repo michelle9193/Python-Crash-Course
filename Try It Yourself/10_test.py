@@ -121,25 +121,56 @@
 #     # Count the approximate number of words in the file:
 #     print(contents)
 
-# 10-9 Silent Cats and Dogs
-from pathlib import Path
+# # 10-9 Silent Cats and Dogs
+# from pathlib import Path
 
-path = Path('cats.txt')
-try:
-    contents = path.read_text(encoding='utf-8')
-except FileNotFoundError:
-    pass
-else:
-    # Count the approximate number of words in the file:
-    print(contents)
-from pathlib import Path
+# path = Path('cats.txt')
+# try:
+#     contents = path.read_text(encoding='utf-8')
+# except FileNotFoundError:
+#     pass
+# else:
+#     # Count the approximate number of words in the file:
+#     print(contents)
+# from pathlib import Path
 
-path = Path('dog.txt')
+# path = Path('dog.txt')
 
-try:
-    contents = path.read_text(encoding='utf-8')
-except FileNotFoundError:
-    pass
-else:
-    # Count the approximate number of words in the file:
-    print(contents)
+# try:
+#     contents = path.read_text(encoding='utf-8')
+# except FileNotFoundError:
+#     pass
+# else:
+#     # Count the approximate number of words in the file:
+#     print(contents)
+
+# 10-10 Common Words
+# from pathlib import Path
+
+# path = Path('gutenberg.txt')
+# try:
+#     contents = path.read_text(encoding='utf-8')
+#     read = contents.lower().count('the')
+# except FileNotFoundError:
+#     print(f"Sorry, the file {path} does not exist.")
+# else:
+#     # Count the approximate number of words in the file:
+#     print(read)
+
+# # Correct way of writing the 10-10 exercise
+# from pathlib import Path
+
+# def count_common_words(filename, word):
+#     """Count how many times a specific word appears in the text."""
+#     path = Path(filename)
+#     try:
+#         contents = path.read_text()
+#     except FileNotFoundError:
+#         pass
+#     else:
+#         word_count = contents.lower().count(word)
+#         msg = f"'{word}' appears in {filename} about {word_count} times."
+#         print(msg)
+
+# filename = 'alice.txt'
+# count_common_words(filename, 'the')
