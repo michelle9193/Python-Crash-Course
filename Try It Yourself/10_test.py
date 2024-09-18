@@ -174,3 +174,26 @@
 
 # filename = 'alice.txt'
 # count_common_words(filename, 'the')
+
+# # 10-11 Favorite Number
+# # Prompt for favorite number
+# from pathlib import Path
+# import json
+
+# favorite_number = input("What is your favorite number? ")
+
+# path = Path('favorite_number.json')
+# contents = json.dumps(favorite_number)
+# path.write_text(contents)
+
+# print("Thanks! I'll remember that.")
+
+# # Read the value and print a message
+# from pathlib import Path
+# import json
+
+# path = Path('favorite_number.json')
+# contents = path.read_text()
+# number = json.loads(contents)
+
+# print(f"I know your favorite number! It's {number}!")
