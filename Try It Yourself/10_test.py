@@ -197,3 +197,34 @@
 # number = json.loads(contents)
 
 # print(f"I know your favorite number! It's {number}!")
+
+# # 10-12 Favorite Number Remebered
+# from pathlib import Path
+# import json
+
+# path = Path('favorite_number.json')
+# if path.exists():
+#     contents = path.read_text()
+#     favorite_number = json.loads(contents)
+#     print(f"I know your favorite number! It's {favorite_number}!")
+# else:
+#     favorite_number = input("What is your favorite number? ")
+#     contents = json.dumps(favorite_number)
+#     path.write_text(contents)
+#     print(f"We'll rememeber you when you come back, {favorite_number}!")
+
+# # Excercise Solution
+# from pathlib import Path
+# import json
+
+# path = Path('favorite_number.json')
+# try:
+#     contents = path.read_text()
+# except FileNotFoundError:
+#     number = input("What's your favorite number? ")
+#     contents = json.dumps(number)
+#     path.write_text(contents)
+#     print("Thanks, I'll remember that!")
+# else:
+#     number = json.loads(contents)
+#     print(f"I know your favorite number! It's {number}!")
