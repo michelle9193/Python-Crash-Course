@@ -228,3 +228,7 @@
 # else:
 #     number = json.loads(contents)
 #     print(f"I know your favorite number! It's {number}!")
+
+# 10-13 User Dictionary
+# add two or more pieces of information about the user
+# Store all information in a dictionary

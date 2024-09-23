@@ -73,8 +73,9 @@
 
 # greet_user()
 
-# # Factor in one more block of code out of greet_user(). If the username doesn't
-# # exist, the code that prompts for a new username should be moved to a function 
+# # Factor in one more block of code out of greet_user(). If the username 
+# doesn't exist, the code that prompts for a new username should be moved to a 
+# function 
 # # dedicated to that purpose:
 # from pathlib import Path
 # import json
