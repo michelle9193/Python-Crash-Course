@@ -253,47 +253,100 @@
 #     path.write_text(contents)
 #     print(f"We'll remember you when you come back, {username}!")
 
-# Second solution
-from pathlib import Path
-import json
+# # Second solution
+# from pathlib import Path
+# import json
 
-def get_stored_user_info(path):
-    """Get stored username if available."""
-    if path.exists():
-        contents = path.read_text()
-        user_dict = json.loads(contents)
-        return user_dict
-    else:
-        return None
+# def get_stored_user_info(path):
+#     """Get stored username if available."""
+#     if path.exists():
+#         contents = path.read_text()
+#         user_dict = json.loads(contents)
+#         return user_dict
+#     else:
+#         return None
 
-def get_new_user_info(path):
-    """Get information from a new user."""
-    username = input("What is your name? ")
-    location = input("What is your location? ")
-    animal = input("What is your favorite animal? ")
+# def get_new_user_info(path):
+#     """Get information from a new user."""
+#     username = input("What is your name? ")
+#     location = input("What is your location? ")
+#     animal = input("What is your favorite animal? ")
 
-    user_dict = {
-        'username': username,
-        "location": location,
-        "animal": animal,
-    }
+#     user_dict = {
+#         'username': username,
+#         "location": location,
+#         "animal": animal,
+#     }
 
-    contents = json.dumps(user_dict)
-    path.write_text(contents)
-    return user_dict
+#     contents = json.dumps(user_dict)
+#     path.write_text(contents)
+#     return user_dict
 
-def greet_user():
-    """Greet the user by name, and state what we know about them."""
-    path = Path('user_info.json')
-    user_dict = get_stored_user_info(path)  
-    if user_dict:
-        print(f"Welcome back, {user_dict['username']}!")
-        print(f"Lovely weather in {user_dict['location']}")
-        print(f"I see that you like {user_dict['animal']}")
+# def greet_user():
+#     """Greet the user by name, and state what we know about them."""
+#     path = Path('user_info.json')
+#     user_dict = get_stored_user_info(path)  
+#     if user_dict:
+#         print(f"Welcome back, {user_dict['username']}!")
+#         print(f"Lovely weather in {user_dict['location']}")
+#         print(f"I see that you like {user_dict['animal']}")
 
-    else:
-        user_dict = get_new_user_info(path)
-        msg = f"We'll remember you when you come back, {user_dict['username']}!"
-        print(msg)
+#     else:
+#         user_dict = get_new_user_info(path)
+#         msg = f"We'll remember you when you come back, {user_dict['username']}!"
+#         print(msg)
 
-greet_user()
+# greet_user()
+
+# # 10-14 Verify User
+# from pathlib import Path
+# import json
+
+# def get_stored_username(path):
+#     """Get stored username if available."""
+#     if path.exists():
+#         contents = path.read_text()
+#         username = json.loads(contents)
+#         return username
+#     else:
+#         return None
+
+# def get_new_username(path):
+#     """Prompt for a new username."""
+#     username = input("What is your name? ")
+#     contents = json.dumps(username)
+#     path.write_text(contents)
+#     return username
+
+# def get_current_username(path):
+#     """Check if current user is the last person to use the program."""
+#     current_user = input("What is your name? ")
+#     contents = json.dumps(current_user)
+#     path.write_text(contents)
+#     return current_user
+
+# def greet_user():
+#     """Greet the user by name."""
+#     path = Path('username.json')
+#     username = get_stored_username(path)
+#     current_user = get_current_username(path)
+#     if username == current_user:
+#         print(f"Welcome back, {username}!")
+#     else:
+#         print(f"We'll remember you when you come back, {current_user}!")
+
+# # Cleaner version of greet_user()
+# def greet_user():
+#     """Greet the user by name."""
+#     path = Path('username.json')
+#     username = get_stored_username(path)
+#     if username:
+#         correct = input(f"Are you {username}? (y/n) ")
+#         if correct == 'y':
+#             print(f"Welcome back, {username}!")
+#             return
+#     # We got a username, but it's not correct.
+#     # Prompt for a new username.
+#     username = get_new_username(path)
+#     print(f"We'll remember you when you come back, {username}!")
+# greet_user()
