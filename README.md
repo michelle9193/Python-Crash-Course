@@ -73,3 +73,10 @@ Style funcctionsto ensure programs continue to be well-structured and as easy as
 - Store clasess in modules and import classes into the files where they'll be used to keep projects organized.
 - Learnt Python standard library, and saw an example based on the random module.
 - Style classes using Python conventions.
+
+## Chapter 10 - Files and Exceptions
+- Learn how to work with files.
+- Read the entire contents of a file, and then work through the contents one line at a time.
+- Learn how to write as much text in a file.
+- Read about exceptions and how to handle the exceptions.
+- Store Python data structures to save information users provide. preventing users from having to start over each time the program runs.
