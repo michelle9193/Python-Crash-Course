@@ -9,7 +9,7 @@ class AnonymousSurvey:
         self.question = question
         self.responses = []
 
-    def show_questions(self):
+    def show_question(self):
         """Show the survey question."""
         print(self.question)
 
