@@ -8,11 +8,7 @@ class Employee:
         self.last_name = last_name
         self.annual_salary = input("Please enter your annual salary")
 
-    def give_raise(self, add_raise):
+    def give_raise(self, default_value, custom_raise):
         """Determine how much the raise amount is."""
-        add_raise = input("Please enter '1' for default raise or '2' to add a different amount")
-        if 1:
-            print(int(self.annual_salary)  + 5000)
-        else:
-            diff_amount = input("Please enter a different amount: ")
-            print(int(self.annual_salary)  + diff_amount)
+        self.default_value = 5000
+        self.custom_raise = input("Enter custom value")
