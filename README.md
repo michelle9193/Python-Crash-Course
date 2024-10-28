@@ -80,3 +80,10 @@ Style funcctionsto ensure programs continue to be well-structured and as easy as
 - Learn how to write as much text in a file.
 - Read about exceptions and how to handle the exceptions.
 - Store Python data structures to save information users provide. preventing users from having to start over each time the program runs.
+
+## Chapter 11  - Testing Your Code
+- Write tests for functions and classes using tools in the pytest module.
+- Write test functions that verify specific behaviors that functions and classes should exhibit.
+- Fuxtures can be used to efficiently create resources that can be used in multiple tests.
+- Writing tests for simple projects are not necessary as a new programmer.
+- Projects that involve significant development effort, should test the critical behaviors of the functions and classes.
